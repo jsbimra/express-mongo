@@ -1,0 +1,38 @@
+extends layout
+
+block content
+
+    h1 #{title} 
+    
+    a(class='small pull-right' href='/') 
+        span(class='glyphicon glyphicon-chevron-left') 
+        |Back to quotes
+
+    
+    br
+    br
+    #bodyContent
+    if bodyContent.length !== 0
+        
+        
+        each obj in bodyContent
+            div(class='')
+                p(class='pull-right')
+                    a(href='/?e=true&name=#{obj.name}&quote=#{obj.quote}') 
+                        span(class='glyphicon glyphicon-edit')
+                    a(href='/listQuotes?d=true&name=#{obj.name}') 
+                        span(class='glyphicon glyphicon-remove')
+                p
+                    blockquote #{obj.quote}
+                    strong - #{obj.name}
+                
+            br
+            br
+        
+     
+    else 
+        div(class='alert alert-info')
+            p 
+                |Sorry. You have not submitted any quotes 
+                a(href='/') back to quotes
+                |.

@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/jquery.slim.min.js')
+    script(src='/javascripts/bootstrap.min.js')
+    script(src='/javascripts/main.js')
+  body
+  
+Change1
+
+    div(class='container' style='width:700px')    
+        ul(class='nav nav-pills')
+            li(class='nav-item')
+                a(class='nav-link' href='/') 
+                    span(class='glyphicon glyphicon-home')
+            li(class='nav-item')
+               a(class='nav-link' href='/listQuotes') Quotes         
+            li(class='dropdown')
+                a(class='dropdown-toggle' data-toggle='dropdown' role='button' href='/users') Users 
+                    span(class='caret')
+                ul(class='dropdown-menu')
+                    li(class='nav-item')
+                         a(class='nav-link' href='/users') List
+                    li(class='nav-item')
+                         a(class='nav-link' href='/users/profile') Profile
+                    li(class='nav-item') 
+                         a(class='nav-link' href='/users/account') account
+            li(class='nav-item')
+                a(class='nav-link' href='/admin') admin
+
+           block content

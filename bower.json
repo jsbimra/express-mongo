@@ -1,0 +1,20 @@
+{
+  "name": "expressbower",
+  "description": "none",
+  "main": "app.js",
+  "authors": [
+    "Jatinder"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "none"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
