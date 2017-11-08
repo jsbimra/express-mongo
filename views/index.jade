@@ -23,8 +23,8 @@ block content
                 textarea(class='form-control' type='text' placeholder='Enter your quote' name='quote') #{query.quote}
         div(class='row text-center')
             div(class='col-md-12 form-group')
-            if query.e === 'true'
-                button(class='form-control btn btn-primary' type='button' id='editQuoteBtn') Update
-            else
-                button(class='form-control btn btn-success' type='submit') Submit
+                if query.e === 'true'
+                    button(class='form-control btn btn-primary' type='button' id='editQuoteBtn') Update
+                else
+                    button(class='form-control btn btn-success' type='submit') Submit
 

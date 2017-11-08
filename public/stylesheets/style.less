@@ -13,8 +13,39 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color:#fff;
+  background-color: #3e0586;
+
 }
+
+h1{text-align:center;}
 
 a {
   color: #00B7FF;
+}
+
+.nav{
+    margin-bottom:30px;
+    
+    & > li > a {
+        color:#fff;
+        text-transform:capitalize;
+        
+        &:hover{
+            color:#337ab7; 
+        }
+    }
+}
+footer{
+    font-size:12px;
+    margin:0;
+    box-sizing: border-box;
+    margin: 0 10px;
+    position:fixed;
+    bottom: 0;
+    left:0;
+    padding: 6px 5px;
+    width:97.9%;
+    border-top: 1px solid #fff;
+   background-color: #3e0586;
 }
